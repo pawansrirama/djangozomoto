@@ -1,0 +1,23 @@
+{%load static%}
+<nav class="navbar navbar-expand-lg navbar-dark red">
+  <a class="navbar-brand" href="#"><img class="rounded" src="{%static 'image1.jpg' %}" width="50" height="60"/></a>
+  <a class="navbar-brand" href="{% url 'index' %}"><button type="button" class="btn btn-dark mb-3">Home</button></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'about' %}"><button type="button" class="btn btn-dark mb-3">About Us</button></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'menu' %}"><button type="button" class="btn btn-dark mb-3">Menu</button></a>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'order' %}"><button type="button" class="btn btn-dark mb-3">Place an Order</button></a>
+      </li>
+    </ul>
+  </div>
+</nav>
